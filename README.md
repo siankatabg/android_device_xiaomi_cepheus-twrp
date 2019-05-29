@@ -8,10 +8,18 @@ TWRP device tree for Xiaomi Mi 9
 Works:
 
 - ADB
-- Decryption of /data (Only if pattern or pin or password is not setted)
+- Decryption of /data
 - Screen brightness settings
-- Vibration on touch 
-- Correct screenshot color 
+- Correct screenshot color
+- MTP
+- Flashing (opengapps, roms, images and so on)
+- Backup/Restore (Needs more testing)
+
+
+TO-DO:
+
+- Vibration support
+- USB OTG
 
 ## Compile
 
@@ -25,7 +33,7 @@ repo sync
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/xiaomi/cepheus" name="mauronofrio/android_device_xiaomi_cepheus" remote="github" revision="android-9.0" />
+<project path="device/xiaomi/cepheus" name="siankatabg/android_device_xiaomi_cepheus-twrp" remote="github" revision="android-9.0" />
 ```
 
 Finally execute these:
@@ -33,7 +41,7 @@ Finally execute these:
 ```
 . build/envsetup.sh
 lunch omni_cepheus-eng
-mka recoveryimage ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
+mka recoveryimage
 ```
 
 To test it:
@@ -48,4 +56,6 @@ Kernel Sources: using precompiled stock kernel
 
 ## Thanks
 
-- Thanks to @PeterCxy for the commits and the base: https://github.com/PeterCxy/android_device_xiaomi_violet-twrp
+- Thanks to @mauronofrio and @PeterCxy for the commits and the base: 
+https://github.com/mauronofrio/android_device_xiaomi_cepheus
+https://github.com/PeterCxy/android_device_xiaomi_violet-twrp
