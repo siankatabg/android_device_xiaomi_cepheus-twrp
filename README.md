@@ -14,12 +14,12 @@ Works:
 - MTP
 - Flashing (opengapps, roms, images and so on)
 - Backup/Restore (Needs more testing)
+- USB OTG
 
 
 TO-DO:
 
 - Vibration support
-- USB OTG
 
 ## Compile
 
