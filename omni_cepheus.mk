@@ -28,7 +28,7 @@ ALLOW_MISSING_DEPENDENCIES := true
 PRODUCT_DEVICE := cepheus
 PRODUCT_NAME := omni_cepheus
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Mi 9
+PRODUCT_MODEL := MI 9
 PRODUCT_MANUFACTURER := Xiaomi
 
 # HACK: Set vendor patch level
